@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7203753688418876216}
   - component: {fileID: 4083291510221831321}
   - component: {fileID: 2918416487445444166}
+  - component: {fileID: 1833939012341697366}
   m_Layer: 7
   m_Name: SmallTableSprite
   m_TagString: Untagged
@@ -130,6 +131,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.96875, y: 0.390625}
   m_EdgeRadius: 0
+--- !u!114 &1833939012341697366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110859340488090854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &8078665544666613224
 GameObject:
   m_ObjectHideFlags: 0

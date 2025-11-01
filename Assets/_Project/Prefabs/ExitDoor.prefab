@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6631259918220616205}
   - component: {fileID: 3678977714727395795}
   - component: {fileID: 2717068238194354843}
+  - component: {fileID: 5243768847918953222}
   m_Layer: 7
   m_Name: ExitDoorSprite
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 951934833
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -958459539, guid: 4c6c770b5b6eb68429fad4c2a49954f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -130,6 +131,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.734375, y: 2.109375}
   m_EdgeRadius: 0
+--- !u!114 &5243768847918953222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011665776370473318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &7882513119812709498
 GameObject:
   m_ObjectHideFlags: 0
