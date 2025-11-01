@@ -47,6 +47,9 @@ TagManager:
   - name: DownProp
     uniqueID: 639833817
     locked: 0
+  - name: Character
+    uniqueID: 2110610581
+    locked: 0
   - name: UpProp
     uniqueID: 951934833
     locked: 0
