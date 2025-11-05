@@ -18,10 +18,11 @@ public class NPCHealth : MonoBehaviour
     public void Heal(float healAmount)
     {
         currentHealth = Mathf.Min(currentHealth + healAmount, 100);
-        if(maxHealth == 100)
+        if(currentHealth >= 100)
         {
             isSick = false;
             isVulnerable = false;
+            GameManager.Instance.LessVirus(1);
         }
     }
 
@@ -29,5 +30,6 @@ public class NPCHealth : MonoBehaviour
     {
         isVulnerable = true;
     }
+
 
 }

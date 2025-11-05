@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class VirusController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float timeToActivate;
+    [SerializeField] private float contagionSpeed;
+    [SerializeField] private List<NPCController> npcControllers;
+
+    private void Start()
     {
-        
+        StartCoroutine(SicknessCoroutine());
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private IEnumerator SicknessCoroutine()
     {
-        
+        yield return new WaitForSeconds(timeToActivate);
+        foreach (var npc in npcControllers)
+        {
+            npc.MakeSick();
+            GameManager.Instance.AddVirus(1);
+            yield return new WaitForSeconds(contagionSpeed);
+        }
     }
 }

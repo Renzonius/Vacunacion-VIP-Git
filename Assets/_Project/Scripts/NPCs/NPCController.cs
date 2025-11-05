@@ -16,10 +16,10 @@ public class NPCController : MonoBehaviour
 
     private void Start()
     {
-        if(npcHealth.isSick)
-        {
-            spriteRenderer.color = sickColor;
-        }
+        //if(npcHealth.isSick)
+        //{
+        //    spriteRenderer.color = sickColor;
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D tri)
@@ -41,6 +41,7 @@ public class NPCController : MonoBehaviour
         }
         else
         {
+            GameManager.Instance.AddRage(27f);
             StartCoroutine(nameof(RageEffect));
         }
     }
@@ -58,6 +59,15 @@ public class NPCController : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         if (npcHealth.isSick)
         spriteRenderer.color = sickColor;
+        //Aca se debe restar el npc de la lista de NPCs enfermos en el GameManager
+    }
+
+    public void MakeSick()
+    {
+        npcHealth.isSick = true;
+        npcHealth.currentHealth = 0f;
+        spriteRenderer.color = sickColor;
+        //Aca se debe agregar el npc a la lista de NPCs enfermos en el GameManager
     }
 
 }
