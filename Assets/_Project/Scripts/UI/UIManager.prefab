@@ -4571,6 +4571,10 @@ MonoBehaviour:
   pausePanel: {fileID: 1110669273502661359}
   hudPanel: {fileID: 4428515571386406098}
   gameOverPanel: {fileID: 8600909237585862921}
+  virusNeutralizedPanel: {fileID: 7932705239321440933}
+  infectedPanel: {fileID: 2833954036350113618}
+  ragingPanel: {fileID: 1112081335009705715}
+  virusOutOfControlPanel: {fileID: 2226074415174503762}
 --- !u!1 &3791006436613672340
 GameObject:
   m_ObjectHideFlags: 0

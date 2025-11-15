@@ -13,6 +13,8 @@ public class SceneController : MonoBehaviour
 {
     //Con esto obtengo el nombre de la escena actual
 
+    public static SceneController Instance { get; private set; }
+
     private void Start()
     {
         SceneManager.Instance.FadeIn();
@@ -32,6 +34,7 @@ public class SceneController : MonoBehaviour
 
     private IEnumerator LoadSceneCoroutine(string sceneName)
     {
+        Debug.Log("Cargando escena: " + sceneName);
         SceneManager.Instance.FadeOut();
         yield return new WaitForSeconds(SceneManager.Instance.timeToFadeOutDuration); // Espera a que termine el fade out.
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);

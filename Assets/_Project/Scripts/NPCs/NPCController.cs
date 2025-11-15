@@ -1,7 +1,5 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class NPCController : MonoBehaviour
@@ -14,13 +12,12 @@ public class NPCController : MonoBehaviour
     private Color sickColor = Color.green;
     private Color rageColor = Color.red;
 
+
     private void Start()
     {
-        //if(npcHealth.isSick)
-        //{
-        //    spriteRenderer.color = sickColor;
-        //}
     }
+
+ 
 
     private void OnTriggerEnter2D(Collider2D tri)
     {

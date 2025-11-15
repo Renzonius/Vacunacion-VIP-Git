@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rbBase: {fileID: 1466107033391530597}
-  movementSpeedBase: 3
+  movementSpeedBase: 5
 --- !u!1 &2617929704013906509
 GameObject:
   m_ObjectHideFlags: 0

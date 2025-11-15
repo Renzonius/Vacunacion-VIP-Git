@@ -48,11 +48,6 @@ public class UIManager : MonoBehaviour
         gameOverPanel.SetActive(false);
     }
 
-    public void PlayButton()
-    {
-        GameManager.Instance.ChangeState(GameState.Playing);
-    }
-
     public void PlayerLose()
     {
         GameState reason = GameManager.Instance.CurrentState;

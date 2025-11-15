@@ -50,13 +50,13 @@ public class Projectile : MonoBehaviour, IPoolable
     private void OnTriggerEnter2D(Collider2D tri)
     {
         // Daño, efectos, etc.
-        Debug.Log("Projectile triggered: " + tri.gameObject.name);
+        //Debug.Log("Projectile triggered: " + tri.gameObject.name);
         pool.ReturnToPool(this);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
     { 
-        Debug.Log("Projectile hit: " + col.gameObject.name);
+        //Debug.Log("Projectile hit: " + col.gameObject.name);
         pool.ReturnToPool(this);
     }
 }
